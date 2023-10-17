@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unknown-property */
 
-import Brand from "../Brand/Brand";
 
 const Hero = () => {
     return (

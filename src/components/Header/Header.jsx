@@ -1,5 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
-import Hero from "../Hero/Hero";
+import {  NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
