@@ -12,7 +12,7 @@ const Header = () => {
                     <div className="flex-none">
                         <ul className="flex gap-5 items-center font-semibold">
                             <NavLink to={"/"}><a>Home</a></NavLink>
-                            <NavLink to={"/addProduct"}><a>Add product</a></NavLink>
+                            <NavLink to={"/addProducts"}><a>Add product</a></NavLink>
                             <NavLink to={"/myCart"}><a>My cart</a></NavLink>
                             <NavLink to={"/login"}> <button className="btn btn-primary text-white">Login</button> </NavLink>
                             
