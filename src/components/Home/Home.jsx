@@ -1,8 +1,11 @@
+import Brand from "../Brand/Brand";
+import Hero from "../Hero/Hero";
 
 const Home = () => {
     return (
-        <div>
-            <h1>Welcome</h1>
+        <div className="w-[95%] mx-auto">
+            <Hero></Hero>
+            <Brand></Brand>
         </div>
     );
 };

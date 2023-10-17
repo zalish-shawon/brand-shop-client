@@ -22,7 +22,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            <Hero></Hero>
+           
         </div>
     );
 };

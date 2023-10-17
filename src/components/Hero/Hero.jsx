@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 
+import Brand from "../Brand/Brand";
+
 const Hero = () => {
     return (
         <div>
@@ -21,6 +23,7 @@ const Hero = () => {
         </div>                
     </div>
 </section>
+        
         </div>
     );
 };
