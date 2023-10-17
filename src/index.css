@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav a.active {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
