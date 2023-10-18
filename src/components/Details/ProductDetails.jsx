@@ -1,9 +1,36 @@
 /* eslint-disable react/no-unknown-property */
-import { useLoaderData } from "react-router-dom";
+import {  useLoaderData } from "react-router-dom";
+import Swal from 'sweetalert2'
+
 
 const ProductDetails = () => {
     const product = useLoaderData()
-    console.log(product);
+    const {_id, name, image, price} = product
+    const selectedItem = {name, image, price}
+    
+    
+    const handleAddToCart = () => {
+        fetch("http://localhost:5001/myCarts", {
+            "method": "POST",
+            "headers": {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(selectedItem)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            if (data.insertedId) {
+                Swal.fire(
+                    'Good job!',
+                    'Product updated successfully',
+                    'success'
+                  )
+            }
+        })
+        
+        
+    }
     return (
         <div>
             <div className="mt-5 mb-10 text-center bg-yellow-900 p-16">
@@ -51,7 +78,8 @@ const ProductDetails = () => {
                 </div>
                         </div>
                         <a class="inline-block" href="#">
-                            <button
+                            
+                            <button onClick={() => handleAddToCart(_id)}
                                 class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-white uppercase align-middle transition-all rounded-lg select-none bg-pink-300 hover:bg-pink-500/80 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                 type="button"
                             >
@@ -72,6 +100,8 @@ const ProductDetails = () => {
                                     ></path>
                                 </svg>
                             </button>
+                            
+                            
                         </a>
                     </div>
                 </div>

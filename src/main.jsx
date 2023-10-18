@@ -14,6 +14,7 @@ import AppleItems from './components/AppleItems/AppleItems.jsx';
 import SamsungItems from './components/SamsungItems/SamsungItems.jsx';
 import ProductDetails from './components/Details/ProductDetails.jsx';
 import UpdateProduct from './components/UpdateProduct/UpdateProduct.jsx';
+import MyCart from './components/MyCart/MyCart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,11 @@ const router = createBrowserRouter([
         loader: ({params}) => fetch(`http://localhost:5001/products/${params.id}`)
 
       },
+      {
+        path: "/myCart",
+        element: <MyCart></MyCart>,
+        loader: () => fetch(`http://localhost:5001/myCarts`)
+      }
     ]
   },
 ]);
