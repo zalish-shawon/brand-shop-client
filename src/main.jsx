@@ -10,6 +10,8 @@ import {
 import MainLayouts from './components/mainLayouts/MainLayouts.jsx';
 import Home from './components/Home/Home.jsx';
 import AddProducts from './components/AddProducts/AddProducts.jsx';
+import AppleItems from './components/AppleItems/AppleItems.jsx';
+import SamsungItems from './components/SamsungItems/SamsungItems.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,18 @@ const router = createBrowserRouter([
       {
         path: "/addProducts",
         element: <AddProducts></AddProducts>
+      },
+      {
+        path: "/appleItems",
+        element: <AppleItems></AppleItems>,
+        loader: () => fetch(`http://localhost:5001/products`)
+        
+      },
+      {
+        path: "/samsungItems",
+        element: <SamsungItems></SamsungItems>,
+        loader: () => fetch(`http://localhost:5001/products`)
+        
       }
     ]
   },

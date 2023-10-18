@@ -10,7 +10,7 @@ const Brand = () => {
                 <p className="text-3xl font-semibold mt-2">World best electronics products with best price!</p>
             </div>
             <div className="grid grid-cols-3 gap-x-4 gap-y-16 p-20">
-                <Link to={"/apple"}>
+                <Link to={"/appleItems"}>
                 
                 <div class="cursor-pointer relative flex flex-col text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
                 <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white  shadow-blue-gray-500/40">
@@ -30,7 +30,7 @@ const Brand = () => {
             </div>
                 
                 </Link>
-                <Link to={"/samsung"}>
+                <Link to={"/samsungItems"}>
                 
                 <div class="cursor-pointer relative  flex flex-col text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
                 <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white  shadow-blue-gray-500/40">
@@ -50,7 +50,7 @@ const Brand = () => {
             </div>
                 
                 </Link>
-                <Link to={"/sony"}>
+                <Link to={"/sonyItems"}>
                 
                 <div class="cursor-pointer relative  flex flex-col text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
                 <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white  shadow-blue-gray-500/40">
@@ -70,7 +70,7 @@ const Brand = () => {
             </div>
                 
                 </Link>
-                <Link to={"/google"}>
+                <Link to={"/googleItems"}>
                 
                 <div class="cursor-pointer relative flex flex-col text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
                 <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white  shadow-blue-gray-500/40">
@@ -90,7 +90,7 @@ const Brand = () => {
             </div>
                 
                 </Link>
-                <Link to={"/microsoft"}>
+                <Link to={"/microsoftItems"}>
                 
                 <div class="cursor-pointer relative  flex flex-col text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
                 <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white  shadow-blue-gray-500/40">
@@ -110,7 +110,7 @@ const Brand = () => {
             </div>
                 
                 </Link>
-                <Link to={"/intel"}>
+                <Link to={"/intelItems"}>
                 
                 <div class="cursor-pointer relative  flex flex-col text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
                 <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white  shadow-blue-gray-500/40">
