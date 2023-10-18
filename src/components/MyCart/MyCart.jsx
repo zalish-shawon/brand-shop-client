@@ -11,7 +11,7 @@ const MyCart = () => {
     return (
         <div>
             <div className="mt-5 mb-10 text-center bg-red-200 p-16">
-                <h1 className="text-5xl font-bold">Cart Items</h1>
+                <h1 className="text-5xl font-bold">Cart Items {items.length}</h1>
             </div>
 
             <div class="bg-gray-100  py-8 ">

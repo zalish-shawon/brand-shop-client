@@ -15,6 +15,10 @@ import SamsungItems from './components/SamsungItems/SamsungItems.jsx';
 import ProductDetails from './components/Details/ProductDetails.jsx';
 import UpdateProduct from './components/UpdateProduct/UpdateProduct.jsx';
 import MyCart from './components/MyCart/MyCart.jsx';
+import SonyItems from './components/Sony/SonyItems.jsx';
+import GoogleItems from './components/Google/GoogleItems.jsx';
+import MicrosoftItems from './components/Microsoft/MicrosoftItems.jsx';
+import IntelItems from './components/Intel/IntelItems.jsx';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +62,27 @@ const router = createBrowserRouter([
         path: "/myCart",
         element: <MyCart></MyCart>,
         loader: () => fetch(`http://localhost:5001/myCarts`)
+      },
+      {
+        path: "/sonyItems",
+        element: <SonyItems></SonyItems> ,
+        loader: () => fetch(`http://localhost:5001/products`)
+      },
+      {
+        path: "/googleItems",
+        element: <GoogleItems></GoogleItems>,
+        loader: () => fetch(`http://localhost:5001/products`)
+
+      },
+      {
+        path: "/microsoftItems",
+        element: <MicrosoftItems></MicrosoftItems>,
+        loader: () => fetch(`http://localhost:5001/products`)
+      },
+      {
+        path: "/intelItems",
+        element: <IntelItems></IntelItems>,
+        loader: () => fetch(`http://localhost:5001/products`)
       }
     ]
   },

@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-
+import Swal from 'sweetalert2'
 const AddProducts = () => {
 
     const handleAddproduct = (event) => {
@@ -23,7 +23,15 @@ const AddProducts = () => {
             body: JSON.stringify(product)
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+          console.log(data);
+          Swal.fire(
+            'Good job!',
+            'Product added successfully!',
+            'success'
+          )
+          form.reset()
+        })
         
     }
 

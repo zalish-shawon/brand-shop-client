@@ -1,31 +1,30 @@
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/no-unknown-property */
 import { useLoaderData } from "react-router-dom";
-import SamsungItemsCard from "./SamsungItemsCard";
+import GoogleItemsCards from "./GoogleItemsCards";
 
-const SamsungItems = () => {
+const GoogleItems = () => {
+
     const products = useLoaderData();
     const {name} = products
     console.log(name);
     
-    const samsungProducts = products.filter(product => product.brand.toLowerCase() === 'samsung');
-    console.log(samsungProducts);
+    const googleProducts = products.filter(product => product.brand.toLowerCase() === 'google');
+    console.log(googleProducts);
     return (
         <div>
         <div className="mt-5 text-center bg-blue-400 p-16">
-            <h1 className="text-5xl font-bold">OUR SAMSUNG PRODUCTS</h1>
+            <h1 className="text-5xl font-bold">OUR GOOGLE PRODUCTS</h1>
         </div>
 
         <div className="mt-6 ">
             <div className="carousel ">
                 <div id="item1" className="carousel-item w-full">
-                    <img src="https://luxuryasiainsider.files.wordpress.com/2020/07/samsung-x-shopee-pr.png?w=723" className="w-[800px] mx-auto" />
+                    <img src="https://www.hardwarezone.com.sg/thumbs/news/707431/t.jpg" className="w-[800px] mx-auto" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img src="https://live.staticflickr.com/65535/50350906283_7f8fc61156_o.jpg" className="w-[800px] mx-auto" />
+                    <img src="https://i.ytimg.com/vi/otomCbnwsv0/maxresdefault.jpg" className="w-[800px] mx-auto" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img src="https://solusinews.id/wp-content/uploads/2021/09/Samsung-x-Lazada-Super-Brand-Day-2021.png" className="w-[800px] mx-auto" />
+                    <img src="https://www.ytechb.com/wp-content/uploads/2023/10/Pixel-8-Pro-buyers-guide-1.webp" className="w-[800px] mx-auto" />
                 </div>
 
             </div>
@@ -38,7 +37,7 @@ const SamsungItems = () => {
         </div>
         <div className="grid grid-cols-3 gap-4 p-16">
             {
-                samsungProducts.map(product => <SamsungItemsCard key={product._id} product={product}></SamsungItemsCard>
+                googleProducts.map(product => <GoogleItemsCards key={product._id} product={product}></GoogleItemsCards> 
                  
 
                 )
@@ -48,4 +47,4 @@ const SamsungItems = () => {
     );
 };
 
-export default SamsungItems;
+export default GoogleItems;

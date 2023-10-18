@@ -23,7 +23,7 @@ const ProductDetails = () => {
             if (data.insertedId) {
                 Swal.fire(
                     'Good job!',
-                    'Product updated successfully',
+                    'Product added in cart',
                     'success'
                   )
             }
@@ -42,7 +42,7 @@ const ProductDetails = () => {
                         <img
                             src={product.image}
                             alt="image"
-                            class="object-cover w-full h-full"
+                            class="object-cover w-full"
                         />
                     </div>
                     <div class="p-6">

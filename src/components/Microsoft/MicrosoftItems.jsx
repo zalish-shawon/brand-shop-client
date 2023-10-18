@@ -1,31 +1,29 @@
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/no-unknown-property */
 import { useLoaderData } from "react-router-dom";
-import SamsungItemsCard from "./SamsungItemsCard";
+import MicrosoftItemscards from "./MicrosoftItemscards";
 
-const SamsungItems = () => {
+const MicrosoftItems = () => {
     const products = useLoaderData();
     const {name} = products
     console.log(name);
     
-    const samsungProducts = products.filter(product => product.brand.toLowerCase() === 'samsung');
-    console.log(samsungProducts);
+    const msProducts = products.filter(product => product.brand.toLowerCase() === 'microsoft');
+    console.log(msProducts);
     return (
         <div>
         <div className="mt-5 text-center bg-blue-400 p-16">
-            <h1 className="text-5xl font-bold">OUR SAMSUNG PRODUCTS</h1>
+            <h1 className="text-5xl font-bold">OUR MICROSOFT PRODUCTS</h1>
         </div>
 
         <div className="mt-6 ">
             <div className="carousel ">
                 <div id="item1" className="carousel-item w-full">
-                    <img src="https://luxuryasiainsider.files.wordpress.com/2020/07/samsung-x-shopee-pr.png?w=723" className="w-[800px] mx-auto" />
+                    <img src="https://www.actendo.com/wordpress_2/wp-content/uploads/2021/07/Office-2022-1030x396.jpg?x77144" className="w-[800px] mx-auto" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img src="https://live.staticflickr.com/65535/50350906283_7f8fc61156_o.jpg" className="w-[800px] mx-auto" />
+                    <img src="https://cdn.mos.cms.futurecdn.net/kKykJuKtUCANquFzFoq4yj.jpg" className="w-[800px] mx-auto" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img src="https://solusinews.id/wp-content/uploads/2021/09/Samsung-x-Lazada-Super-Brand-Day-2021.png" className="w-[800px] mx-auto" />
+                    <img src="https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/743/cached.offlinehbpl.hbpl.co.uk/news/OMC/8432EE4B-B7E8-2091-7BB5059E9B1B08E5.jpg" className="w-[800px] mx-auto" />
                 </div>
 
             </div>
@@ -38,7 +36,7 @@ const SamsungItems = () => {
         </div>
         <div className="grid grid-cols-3 gap-4 p-16">
             {
-                samsungProducts.map(product => <SamsungItemsCard key={product._id} product={product}></SamsungItemsCard>
+                msProducts.map(product => <MicrosoftItemscards key={product._id} product={product}></MicrosoftItemscards> 
                  
 
                 )
@@ -48,4 +46,4 @@ const SamsungItems = () => {
     );
 };
 
-export default SamsungItems;
+export default MicrosoftItems;

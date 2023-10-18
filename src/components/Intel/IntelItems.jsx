@@ -1,31 +1,29 @@
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/no-unknown-property */
 import { useLoaderData } from "react-router-dom";
-import SamsungItemsCard from "./SamsungItemsCard";
+import IntelItemsCards from "./IntelItemsCards";
 
-const SamsungItems = () => {
+const IntelItems = () => {
     const products = useLoaderData();
     const {name} = products
     console.log(name);
     
-    const samsungProducts = products.filter(product => product.brand.toLowerCase() === 'samsung');
-    console.log(samsungProducts);
+    const intelProducts = products.filter(product => product.brand.toLowerCase() === 'intel');
+    
     return (
         <div>
         <div className="mt-5 text-center bg-blue-400 p-16">
-            <h1 className="text-5xl font-bold">OUR SAMSUNG PRODUCTS</h1>
+            <h1 className="text-5xl font-bold">OUR INTEL PRODUCTS</h1>
         </div>
 
         <div className="mt-6 ">
             <div className="carousel ">
                 <div id="item1" className="carousel-item w-full">
-                    <img src="https://luxuryasiainsider.files.wordpress.com/2020/07/samsung-x-shopee-pr.png?w=723" className="w-[800px] mx-auto" />
+                    <img src="https://promotions.newegg.com/FlagShip/intel/banner_1.jpg" className="w-[800px] mx-auto" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img src="https://live.staticflickr.com/65535/50350906283_7f8fc61156_o.jpg" className="w-[800px] mx-auto" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQabYlUkX3xMBiaUL7QOpOXJFZdqdYup2jE9lT4JDHqc2X8522CYJXYUSzQB4uTFYdvZgU&usqp=CAU" className="w-[800px] mx-auto" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img src="https://solusinews.id/wp-content/uploads/2021/09/Samsung-x-Lazada-Super-Brand-Day-2021.png" className="w-[800px] mx-auto" />
+                    <img src="https://xanxogaming.com/wp-content/uploads/2022/10/13900K-Review-Banner-800x445.jpg" className="w-[800px] mx-auto" />
                 </div>
 
             </div>
@@ -38,7 +36,7 @@ const SamsungItems = () => {
         </div>
         <div className="grid grid-cols-3 gap-4 p-16">
             {
-                samsungProducts.map(product => <SamsungItemsCard key={product._id} product={product}></SamsungItemsCard>
+                intelProducts.map(product => <IntelItemsCards key={product._id} product={product} ></IntelItemsCards> 
                  
 
                 )
@@ -48,4 +46,4 @@ const SamsungItems = () => {
     );
 };
 
-export default SamsungItems;
+export default IntelItems;
