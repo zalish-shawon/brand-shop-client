@@ -2,9 +2,11 @@
 
 import { useLoaderData } from "react-router-dom";
 import MyCartitems from "./MyCartitems";
+import { useState } from "react";
 
 const MyCart = () => {
     const cartItems = useLoaderData()
+    const [items, setItem] = useState(cartItems)
     
     return (
         <div>
@@ -16,7 +18,7 @@ const MyCart = () => {
                 <div class="container  mx-auto px-4 ">
 
                     {
-                        cartItems.map(item => <MyCartitems key={item._id} item={item}></MyCartitems>)
+                        items.map(item => <MyCartitems setItem={setItem} items={items} key={item._id} item={item}></MyCartitems>)
                     }
                 </div>
             </div>
