@@ -22,10 +22,10 @@ const SamsungItems = () => {
                     <img src="https://luxuryasiainsider.files.wordpress.com/2020/07/samsung-x-shopee-pr.png?w=723" className="w-[800px] mx-auto" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img src="https://www.apple.com/newsroom/images/product/services/lifestyle/Apple-Data-Privacy-Day-hero.jpg.og.jpg?202310101640" className="w-[800px] mx-auto" />
+                    <img src="https://live.staticflickr.com/65535/50350906283_7f8fc61156_o.jpg" className="w-[800px] mx-auto" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img src="https://techmarkup.com/wp-content/uploads/2022/06/1655224039_Check-out-the-prices-Apple-confirms-the-launch-of-the.jpeg" className="w-[800px] mx-auto" />
+                    <img src="https://solusinews.id/wp-content/uploads/2021/09/Samsung-x-Lazada-Super-Brand-Day-2021.png" className="w-[800px] mx-auto" />
                 </div>
 
             </div>
