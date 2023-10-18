@@ -52,10 +52,10 @@ const ProductDetails = () => {
                         </div>
                         <a class="inline-block" href="#">
                             <button
-                                class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-pink-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-white uppercase align-middle transition-all rounded-lg select-none bg-pink-300 hover:bg-pink-500/80 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                 type="button"
                             >
-                                Learn More
+                                Add to cart
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"

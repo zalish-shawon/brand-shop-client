@@ -13,6 +13,7 @@ import AddProducts from './components/AddProducts/AddProducts.jsx';
 import AppleItems from './components/AppleItems/AppleItems.jsx';
 import SamsungItems from './components/SamsungItems/SamsungItems.jsx';
 import ProductDetails from './components/Details/ProductDetails.jsx';
+import UpdateProduct from './components/UpdateProduct/UpdateProduct.jsx';
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,13 @@ const router = createBrowserRouter([
         element: <ProductDetails></ProductDetails>,
         loader: ({params}) => fetch(`http://localhost:5001/products/${params.id}`)
 
-      }
+      },
+      {
+        path: "/updateProduct/:id",
+        element: <UpdateProduct></UpdateProduct>,
+        loader: ({params}) => fetch(`http://localhost:5001/products/${params.id}`)
+
+      },
     ]
   },
 ]);
