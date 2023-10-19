@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
 // Initialization for ES Users
 
@@ -14,7 +15,6 @@ import Swal from 'sweetalert2'
 const Registration = () => {
 
     const [error, setError] = useState(null)
-    const [terms, setTerms] = useState(false)
     const { createAccountWithPassword } = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
@@ -51,10 +51,11 @@ const Registration = () => {
                 })
                 navigate(location?.state ? location.state : "/")
                 Swal.fire(
-                    'Good job!',
+                    'You can Log in now!',
                     'Registartion successful!',
                     'success'
                 )
+                form.reset()
 
             })
             .catch(error => {
@@ -63,10 +64,6 @@ const Registration = () => {
 
 
     }
-
-
-
-
 
     return (
         <section class="bg-gray-50 dark:bg-gray-900">
