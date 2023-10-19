@@ -1,12 +1,16 @@
 /* eslint-disable react/no-unknown-property */
 import {  useLoaderData } from "react-router-dom";
 import Swal from 'sweetalert2'
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const ProductDetails = () => {
     const product = useLoaderData()
+    const {user} = useContext(AuthContext)
+    const userEmail = user.email;
     const {_id, name, image, price} = product
-    const selectedItem = {name, image, price}
+    const selectedItem = {name, image, price, userEmail}
     
     
     const handleAddToCart = () => {
