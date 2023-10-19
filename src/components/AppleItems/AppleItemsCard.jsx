@@ -10,7 +10,7 @@ const AppleItemsCard = ({product}) => {
         <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-96 rounded-xl bg-clip-border">
             <img
                 src={image}
-                class="object-cover w-full h-full"
+                class="object-cover"
             />
         </div>
         <div class="p-6">

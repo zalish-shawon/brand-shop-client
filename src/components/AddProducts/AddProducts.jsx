@@ -74,7 +74,7 @@ const AddProducts = () => {
 
               <div class="md:col-span-2">
                 <label for="city">Type of product</label>
-                <input required type="text" name="type" id="city" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder="phone, computer etc" />
+                <input required type="text" name="type" id="city" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder="Phone, Computer etc" />
               </div>
 
               <div class="md:col-span-2">

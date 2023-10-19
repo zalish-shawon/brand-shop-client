@@ -4,12 +4,8 @@ import { useLoaderData } from "react-router-dom";
 import SamsungItemsCard from "./SamsungItemsCard";
 
 const SamsungItems = () => {
-    const products = useLoaderData();
-    const {name} = products
-    console.log(name);
+    const samsungProducts = useLoaderData();
     
-    const samsungProducts = products.filter(product => product.brand.toLowerCase() === 'samsung');
-    console.log(samsungProducts);
     return (
         <div>
         <div className="mt-5 text-center bg-blue-400 p-16">

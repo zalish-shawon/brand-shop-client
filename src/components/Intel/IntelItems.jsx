@@ -2,11 +2,8 @@ import { useLoaderData } from "react-router-dom";
 import IntelItemsCards from "./IntelItemsCards";
 
 const IntelItems = () => {
-    const products = useLoaderData();
-    const {name} = products
-    console.log(name);
+    const intelProducts = useLoaderData();
     
-    const intelProducts = products.filter(product => product.brand.toLowerCase() === 'intel');
     
     return (
         <div>

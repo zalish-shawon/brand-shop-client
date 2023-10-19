@@ -2,10 +2,9 @@ import { useLoaderData } from "react-router-dom";
 import SonyItemsCards from "./SonyItemsCards";
 
 const SonyItems = () => {
-    const products = useLoaderData();
+    const sonyProducts = useLoaderData();
    
-    const sonyProducts = products.filter(product => product.brand.toLowerCase() === 'sony')
-    console.log(sonyProducts);
+    
     return (
         <div>
             <div>

@@ -3,12 +3,8 @@ import GoogleItemsCards from "./GoogleItemsCards";
 
 const GoogleItems = () => {
 
-    const products = useLoaderData();
-    const {name} = products
-    console.log(name);
+    const googleProducts = useLoaderData();
     
-    const googleProducts = products.filter(product => product.brand.toLowerCase() === 'google');
-    console.log(googleProducts);
     return (
         <div>
         <div className="mt-5 text-center bg-blue-400 p-16">

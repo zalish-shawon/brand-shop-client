@@ -5,10 +5,9 @@ import AppleItemsCard from "./AppleItemsCard";
 
 const AppleItems = () => {
 
-    const products = useLoaderData();
+    const appleProducts = useLoaderData();
 
-    const appleProducts = products.filter(product => product.brand.toLowerCase() === 'apple')
-    console.log(appleProducts);
+   
     return (
         <div>
             <div className="mt-5 text-center bg-blue-gray-400 p-16">

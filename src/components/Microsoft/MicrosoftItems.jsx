@@ -2,12 +2,8 @@ import { useLoaderData } from "react-router-dom";
 import MicrosoftItemscards from "./MicrosoftItemscards";
 
 const MicrosoftItems = () => {
-    const products = useLoaderData();
-    const {name} = products
-    console.log(name);
+    const msProducts = useLoaderData();
     
-    const msProducts = products.filter(product => product.brand.toLowerCase() === 'microsoft');
-    console.log(msProducts);
     return (
         <div>
         <div className="mt-5 text-center bg-blue-400 p-16">

@@ -34,18 +34,7 @@ const router = createBrowserRouter([
         path: "/addProducts",
         element: <AddProducts></AddProducts>
       },
-      {
-        path: "/appleItems",
-        element: <AppleItems></AppleItems>,
-        loader: () => fetch(`http://localhost:5001/products`)
-        
-      },
-      {
-        path: "/samsungItems",
-        element: <SamsungItems></SamsungItems>,
-        loader: () => fetch(`http://localhost:5001/products`)
-        
-      },
+      
       {
         path: "/details/:id",
         element: <ProductDetails></ProductDetails>,
@@ -63,26 +52,39 @@ const router = createBrowserRouter([
         element: <MyCart></MyCart>,
         loader: () => fetch(`http://localhost:5001/myCarts`)
       },
+
+      {
+        path: "/appleItems",
+        element: <AppleItems></AppleItems>,
+        loader: () => fetch(`http://localhost:5001/apple`)
+        
+      },
+      {
+        path: "/samsungItems",
+        element: <SamsungItems></SamsungItems>,
+        loader: () => fetch(`http://localhost:5001/samsung`)
+        
+      },
       {
         path: "/sonyItems",
         element: <SonyItems></SonyItems> ,
-        loader: () => fetch(`http://localhost:5001/products`)
+        loader: () => fetch(`http://localhost:5001/sony`)
       },
       {
         path: "/googleItems",
         element: <GoogleItems></GoogleItems>,
-        loader: () => fetch(`http://localhost:5001/products`)
+        loader: () => fetch(`http://localhost:5001/google`)
 
       },
       {
         path: "/microsoftItems",
         element: <MicrosoftItems></MicrosoftItems>,
-        loader: () => fetch(`http://localhost:5001/products`)
+        loader: () => fetch(`http://localhost:5001/microsoft`)
       },
       {
         path: "/intelItems",
         element: <IntelItems></IntelItems>,
-        loader: () => fetch(`http://localhost:5001/products`)
+        loader: () => fetch(`http://localhost:5001/intel`)
       }
     ]
   },
