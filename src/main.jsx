@@ -19,6 +19,9 @@ import SonyItems from './components/Sony/SonyItems.jsx';
 import GoogleItems from './components/Google/GoogleItems.jsx';
 import MicrosoftItems from './components/Microsoft/MicrosoftItems.jsx';
 import IntelItems from './components/Intel/IntelItems.jsx';
+import Login from './components/Login/Login.jsx';
+import Registration from './components/Registration/Registration.jsx';
+import AuthProvider from './Provider/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +37,14 @@ const router = createBrowserRouter([
         path: "/addProducts",
         element: <AddProducts></AddProducts>
       },
-      
+      {
+        path: "/userLogin",
+        element: <Login></Login>
+      },
+      {
+        path: "/userRegistration",
+        element: <Registration></Registration>
+      },
       {
         path: "/details/:id",
         element: <ProductDetails></ProductDetails>,
@@ -92,6 +102,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

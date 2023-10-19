@@ -14,7 +14,7 @@ const Header = () => {
                             <NavLink to={"/"}><a>Home</a></NavLink>
                             <NavLink to={"/addProducts"}><a>Add product</a></NavLink>
                             <NavLink to={"/myCart"}><a>My cart</a></NavLink>
-                            <NavLink to={"/login"}> <button className="btn btn-primary text-white">Login</button> </NavLink>
+                            <NavLink to={"/userLogin"}> <button className="btn btn-primary text-white">Login</button> </NavLink>
                             
                             
                         </ul>
