@@ -22,11 +22,14 @@ import IntelItems from './components/Intel/IntelItems.jsx';
 import Login from './components/Login/Login.jsx';
 import Registration from './components/Registration/Registration.jsx';
 import AuthProvider from './Provider/AuthProvider.jsx';
+import PrivateRoutes from './components/Route/PrivateRoutes.jsx';
+import ErrorPage from './components/Error/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayouts></MainLayouts>,
+    errorElement: <ErrorPage></ErrorPage>,
     
     children: [
       {
@@ -35,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/addProducts",
-        element: <AddProducts></AddProducts>
+        element: <PrivateRoutes><AddProducts></AddProducts></PrivateRoutes>
       },
       {
         path: "/userLogin",
@@ -47,19 +50,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/details/:id",
-        element: <ProductDetails></ProductDetails>,
+        element: <PrivateRoutes><ProductDetails></ProductDetails></PrivateRoutes>,
         loader: ({params}) => fetch(`http://localhost:5001/products/${params.id}`)
 
       },
       {
         path: "/updateProduct/:id",
-        element: <UpdateProduct></UpdateProduct>,
+        element: <PrivateRoutes><UpdateProduct></UpdateProduct></PrivateRoutes>,
         loader: ({params}) => fetch(`http://localhost:5001/products/${params.id}`)
 
       },
       {
         path: "/myCart",
-        element: <MyCart></MyCart>,
+        element:<PrivateRoutes> <MyCart></MyCart></PrivateRoutes>,
         loader: () => fetch(`http://localhost:5001/myCarts`)
       },
 
