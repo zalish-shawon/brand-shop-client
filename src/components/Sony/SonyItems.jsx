@@ -32,7 +32,7 @@ const SonyItems = () => {
 
             </div>
         </div>
-        <div className="grid grid-cols-3 gap-4 p-16">
+        <div className="grid grid-col-1 lg:grid-cols-3 gap-4 mb-20">
             {
                 sonyProducts.map(product => <SonyItemsCards key={product._id} product={product}></SonyItemsCards>
                  

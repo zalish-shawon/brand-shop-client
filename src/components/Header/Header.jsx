@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import {  NavLink } from "react-router-dom";
+import {  Link, NavLink } from "react-router-dom";
 import Swal from 'sweetalert2'
 import { AuthContext } from "../../Provider/AuthProvider";
 
@@ -28,7 +28,7 @@ const Header = () => {
                 <div className="navbar bg-base-100">
                     
                     <div className="flex-1 mr-4">
-                        <img className="w-[100px]" src="/logo.png" alt="" />
+                        <Link to={"/"}><img className="w-[100px]" src="/logo.png" alt="" /></Link>
                     </div>
                     <div className="flex-none">
                         <ul className="flex gap-5 items-center font-semibold">
@@ -42,7 +42,7 @@ const Header = () => {
                                                 <p>{user?.displayName}</p>
                                                 <img className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src={user.photoURL} alt="" />
                                             </div>
-                                            <a onClick={handleLogOut} className="hover:text-orange-600 btn btn-primary">Logout</a>
+                                            <a onClick={handleLogOut} className=" btn btn-primary">Logout</a>
                                             </div>
                                             :
                                             <NavLink to={"/userLogin"}> <button className="btn btn-primary text-white">Login</button> </NavLink>

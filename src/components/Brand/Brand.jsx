@@ -9,7 +9,7 @@ const Brand = () => {
                 <h1 className="font-bold text-6xl"><span className="text-blue-500">WHY</span> CHOOSE US</h1>
                 <p className="text-3xl font-semibold mt-2">World best electronics products with best price!</p>
             </div>
-            <div className="grid grid-cols-3 gap-x-4 gap-y-16 p-20">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-4 gap-y-16 p-20">
                 <Link to={"/appleItems"}>
                 
                 <div class="cursor-pointer relative flex flex-col text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">

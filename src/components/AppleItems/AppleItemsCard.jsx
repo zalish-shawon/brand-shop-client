@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const AppleItemsCard = ({product}) => {
     const {_id, name, image, rating, brand, type, price} = product;
     return (
-        <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl bg-clip-border">
+        <div class="relative flex flex-col text-gray-700 bg-white shadow-md mb-2 rounded-xl bg-clip-border">
         <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-96 rounded-xl bg-clip-border">
             <img
                 src={image}
