@@ -51,53 +51,53 @@ const router = createBrowserRouter([
       {
         path: "/details/:id",
         element: <PrivateRoutes><ProductDetails></ProductDetails></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5001/products/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/products/${params.id}`)
 
       },
       {
         path: "/updateProduct/:id",
         element: <PrivateRoutes><UpdateProduct></UpdateProduct></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5001/products/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/products/${params.id}`)
 
       },
       {
         path: "/myCart",
         element:<PrivateRoutes> <MyCart></MyCart></PrivateRoutes>,
-        loader: () => fetch(`http://localhost:5001/myCarts`)
+        loader: () => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/myCarts`)
       },
 
       {
         path: "/appleItems",
         element: <AppleItems></AppleItems>,
-        loader: () => fetch(`http://localhost:5001/apple`)
+        loader: () => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/apple`)
         
       },
       {
         path: "/samsungItems",
         element: <SamsungItems></SamsungItems>,
-        loader: () => fetch(`http://localhost:5001/samsung`)
+        loader: () => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/samsung`)
         
       },
       {
         path: "/sonyItems",
         element: <SonyItems></SonyItems> ,
-        loader: () => fetch(`http://localhost:5001/sony`)
+        loader: () => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/sony`)
       },
       {
         path: "/googleItems",
         element: <GoogleItems></GoogleItems>,
-        loader: () => fetch(`http://localhost:5001/google`)
+        loader: () => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/google`)
 
       },
       {
         path: "/microsoftItems",
         element: <MicrosoftItems></MicrosoftItems>,
-        loader: () => fetch(`http://localhost:5001/microsoft`)
+        loader: () => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/microsoft`)
       },
       {
         path: "/intelItems",
         element: <IntelItems></IntelItems>,
-        loader: () => fetch(`http://localhost:5001/intel`)
+        loader: () => fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/intel`)
       }
     ]
   },

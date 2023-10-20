@@ -17,7 +17,7 @@ const Brand = () => {
                 <Link to={"/appleItems"}>
 
                     <div className="card card-compact h-[300px]  bg-base-100 shadow-xl">
-                        <figure><img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo-500x281.png" className="w-[300px] h-[200px]" alt="" /></figure>
+                        <figure><img src="https://www.svgrepo.com/show/69341/apple-logo.svg" className="w-[300px] h-[200px]" alt="" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Apple</h2>
                             
@@ -28,7 +28,7 @@ const Brand = () => {
                 <Link to={"/samsungItems"}>
 
                     <div className="card h-[300px] card-compact  bg-base-100 shadow-xl">
-                        <figure><img src="https://1000logos.net/wp-content/uploads/2017/06/Samsung-Logo-1993-500x281.png" className="w-[300px] h-[200px]" alt="" /></figure>
+                        <figure><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/samsung_logo_icon_169775.png" className="w-[300px] h-[200px]" alt="" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Samsung</h2>
                            
@@ -39,7 +39,7 @@ const Brand = () => {
                 <Link to={"/sonyItems"}>
 
                     <div className="card card-compact h-[300px]  bg-base-100 shadow-xl">
-                        <figure><img src="https://1000logos.net/wp-content/uploads/2021/05/Sony-logo-500x281.png" className="w-[300px] h-[200px]" alt="" /></figure>
+                        <figure><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/sony-logo.png" className="w-[300px] h-[200px]" alt="" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Sony</h2>
                            
@@ -50,7 +50,7 @@ const Brand = () => {
                 <Link to={"/googleItems"}>
 
                     <div className="card h-[300px] card-compact  bg-base-100 shadow-xl">
-                        <figure><img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" alt="" className="w-[300px] h-[200px]"  /></figure>
+                        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/640px-Google_%22G%22_Logo.svg.png" alt="" className="w-[300px] h-[200px]"  /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Google</h2>
                             
@@ -72,7 +72,7 @@ const Brand = () => {
                 <Link to={"/intelItems"}>
 
                     <div className="card h-[300px] card-compact bg-base-100 shadow-xl">
-                        <figure><img src="https://1000logos.net/wp-content/uploads/2017/02/Intel-Logo-2005-606x400.png" className="w-[300px] h-[200px]" alt="" /></figure>
+                        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Intel_logo_%282006-2020%29.svg/2560px-Intel_logo_%282006-2020%29.svg.png" className="w-[300px] h-[200px]" alt="" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Intel</h2>
                            
