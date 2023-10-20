@@ -2,7 +2,10 @@
 
 const Blog = () => {
     return (
-      <section class="border-b border-blue-100 w-[90%] mx-auto pt-5 pb-10 lg:pt-[50px] lg:pb-5 bg-white dark:bg-dark">
+      <div className="bg-gray-100 mt-12">
+
+      
+      <section class="border-b border-blue-100 w-[90%] mx-auto pt-5 pb-10 lg:pt-[50px] lg:pb-5  dark:bg-gray-900">
    <div class="container mx-auto">
       <div class="flex flex-wrap justify-center -mx-4">
          <div class="w-full px-4">
@@ -112,6 +115,7 @@ const Blog = () => {
       </div>
    </div>
 </section>
+</div>
     );
 };
 

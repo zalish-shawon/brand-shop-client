@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 
 const Brand = () => {
     return (
+        <div className="bg-gray-100">
+
+        
         <div className="w-[90%] mx-auto mt-12 border-b border-blue-100">
-            <div className="text-center">
+            <div className="text-center pt-5">
                 <h1 className="font-bold text-6xl"><span className="text-blue-500">WHY</span> CHOOSE US</h1>
                 <p className="text-3xl font-semibold mt-2">World best electronics products with best price!</p>
             </div>
@@ -78,6 +81,7 @@ const Brand = () => {
 
                 </Link>
             </div>
+        </div>
         </div>
     );
 };

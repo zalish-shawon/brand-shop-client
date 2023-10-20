@@ -40,7 +40,7 @@ const ProductDetails = () => {
             <div className="mt-5 mb-10 text-center bg-yellow-900 p-16">
                 <h1 className="text-5xl font-bold">{product.name} DETAILS</h1>
             </div>
-            <div className="flex justify-center items-center mt-24 mb-24">
+            <div className="flex justify-center items-center mt-24 mb-24 bg-gray-100 p-10">
                 <div class="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
                         <img
@@ -81,7 +81,7 @@ const ProductDetails = () => {
                     </p>
                 </div>
                         </div>
-                        <a class="inline-block" href="#">
+                        <div class="inline-block" href="#">
                             
                             <button onClick={() => handleAddToCart(_id)}
                                 class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-white uppercase align-middle transition-all rounded-lg select-none bg-pink-300 hover:bg-pink-500/80 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -106,7 +106,7 @@ const ProductDetails = () => {
                             </button>
                             
                             
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>

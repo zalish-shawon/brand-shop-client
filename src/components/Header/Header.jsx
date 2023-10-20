@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'
 import { AuthContext } from "../../Provider/AuthProvider";
 
 
+
 const Header = () => {
 
     const { user, logOut } = useContext(AuthContext)
@@ -23,6 +24,9 @@ const Header = () => {
     }
 
     return (
+        <header >
+
+        
         <div className="w-[95%] mx-auto">
             <nav>
                 <div className="navbar bg-base-100">
@@ -32,6 +36,7 @@ const Header = () => {
                     </div>
                     <div className="flex-none">
                         <ul className="flex gap-5 items-center font-semibold">
+                        
                             <NavLink to={"/"}><a>Home</a></NavLink>
                             <NavLink to={"/addProducts"}><a>Add product</a></NavLink>
                             <NavLink to={"/myCart"}><a>My cart</a></NavLink>
@@ -55,6 +60,7 @@ const Header = () => {
             </nav>
            
         </div>
+        </header>
     );
 };
 

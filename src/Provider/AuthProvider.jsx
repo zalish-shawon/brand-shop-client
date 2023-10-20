@@ -8,6 +8,8 @@ export const AuthContext = createContext(null)
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
+    
+
     const auth = getAuth(app)
 
  const createAccountWithPassword = (email, password) => {
@@ -46,6 +48,10 @@ const AuthProvider = ({children}) => {
     }
  }, [])
 
+
+
+ 
+
  const authInfo = {
     createAccountWithPassword,
     loginUser,
@@ -53,6 +59,7 @@ const AuthProvider = ({children}) => {
     logOut,
     googleLogin,
     loading,
+    
     
  }
 

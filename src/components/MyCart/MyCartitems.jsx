@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 
 const MyCartitems = ({item, setItem, items}) => {
     const {_id, name, image, price} = item
-   
+//    console.log(item);
    
 
     const handleDeleteItem = (_id) => {

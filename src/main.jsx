@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
@@ -21,7 +21,7 @@ import MicrosoftItems from './components/Microsoft/MicrosoftItems.jsx';
 import IntelItems from './components/Intel/IntelItems.jsx';
 import Login from './components/Login/Login.jsx';
 import Registration from './components/Registration/Registration.jsx';
-import AuthProvider from './Provider/AuthProvider.jsx';
+import AuthProvider, { AuthContext } from './Provider/AuthProvider.jsx';
 import PrivateRoutes from './components/Route/PrivateRoutes.jsx';
 import ErrorPage from './components/Error/ErrorPage.jsx';
 
@@ -106,7 +106,10 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-    <RouterProvider router={router} />
+     
+      <RouterProvider router={router} />
+     
+    
     </AuthProvider>
   </React.StrictMode>,
 )

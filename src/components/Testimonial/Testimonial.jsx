@@ -4,11 +4,11 @@ const Testimonial = () => {
     return (
         <div>
             
-<div class="container mx-auto mt-10 ">
+<div class="container mx-auto mt-10 bg-gray-100">
   <section class="mb-12 text-center">
-    <h2 class="mb-12 text-3xl font-bold">Testimonials</h2>
+    <h2 class="mb-12 text-3xl font-bold pt-5">Testimonials</h2>
 
-    <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+    <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12 pb-5">
       <div class="mb-12 md:mb-0">
         <div class="mb-6 flex justify-center">
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
