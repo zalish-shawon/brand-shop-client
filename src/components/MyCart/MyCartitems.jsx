@@ -19,7 +19,7 @@ const MyCartitems = ({item, setItem, items}) => {
           }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`https://brand-shop-server-cnsivb4bz-md-zalish-mahmuds-projects.vercel.app/myCarts/${_id}`, {
+                fetch(`https://brand-shop-server-beige.vercel.app/myCarts/${_id}`, {
                     method: "DELETE",
                 })
 

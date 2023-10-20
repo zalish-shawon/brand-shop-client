@@ -17,13 +17,13 @@ const AppleItems = () => {
             <div className="mt-6 ">
                 <div className="carousel ">
                     <div id="item1" className="carousel-item w-full">
-                        <img src="https://cdn.fstoppers.com/wp-content/uploads/2013/05/iPad.jpg" className="w-[800px] mx-auto" />
+                        <img src="https://cdn.krcs.co.uk/media/wysiwyg/black-friday/Multi-Product_Apple_1000x485-tinypng.png" className="w-[800px] mx-auto" />
                     </div>
                     <div id="item2" className="carousel-item w-full">
-                        <img src="https://www.apple.com/newsroom/images/product/services/lifestyle/Apple-Data-Privacy-Day-hero.jpg.og.jpg?202310101640" className="w-[800px] mx-auto" />
+                        <img src="https://www.doonamis.es/wp-content/uploads/2023/06/Apple-Gafas-realidad-virtual-prototipo-1.png" className="w-[800px] mx-auto" />
                     </div>
                     <div id="item3" className="carousel-item w-full">
-                        <img src="https://techmarkup.com/wp-content/uploads/2022/06/1655224039_Check-out-the-prices-Apple-confirms-the-launch-of-the.jpeg" className="w-[800px] mx-auto" />
+                        <img src="https://i.ytimg.com/vi/ZUvUwg5wLIw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAQIOxb5PlM29lSLXP0c-XVq9Btug" className="w-[800px] mx-auto" />
                     </div>
 
                 </div>

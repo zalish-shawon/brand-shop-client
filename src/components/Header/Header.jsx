@@ -35,7 +35,7 @@ const Header = () => {
                         <Link to={"/"}><img className="w-[100px]" src="/logo.png" alt="" /></Link>
                     </div>
                     <div className="flex-none">
-                        <ul className="flex gap-5 items-center font-semibold">
+                        <ul className="flex flex-col lg:flex-row gap-5 items-center font-semibold">
                         
                             <NavLink to={"/"}><a>Home</a></NavLink>
                             <NavLink to={"/addProducts"}><a>Add product</a></NavLink>
