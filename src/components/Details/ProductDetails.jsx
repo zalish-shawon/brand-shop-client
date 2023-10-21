@@ -14,7 +14,7 @@ const ProductDetails = () => {
     
     
     const handleAddToCart = () => {
-        fetch("https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/myCarts", {
+        fetch("https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/myCarts", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"

@@ -51,53 +51,53 @@ const router = createBrowserRouter([
       {
         path: "/details/:id",
         element: <PrivateRoutes><ProductDetails></ProductDetails></PrivateRoutes>,
-        loader: ({params}) => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/products/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/products/${params.id}`)
 
       },
       {
         path: "/updateProduct/:id",
         element: <PrivateRoutes><UpdateProduct></UpdateProduct></PrivateRoutes>,
-        loader: ({params}) => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/products/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/products/${params.id}`)
 
       },
       {
         path: "/myCart",
         element:<PrivateRoutes> <MyCart></MyCart></PrivateRoutes>,
-        loader: () => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/myCarts`)
+        loader: () => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/myCarts`)
       },
 
       {
         path: "/appleItems",
         element: <AppleItems></AppleItems>,
-        loader: () => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/apple`)
+        loader: () => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/apple`)
         
       },
       {
         path: "/samsungItems",
         element: <SamsungItems></SamsungItems>,
-        loader: () => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/samsung`)
+        loader: () => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/samsung`)
         
       },
       {
         path: "/sonyItems",
         element: <SonyItems></SonyItems> ,
-        loader: () => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/sony`)
+        loader: () => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/sony`)
       },
       {
         path: "/googleItems",
         element: <GoogleItems></GoogleItems>,
-        loader: () => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/google`)
+        loader: () => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/google`)
 
       },
       {
         path: "/microsoftItems",
         element: <MicrosoftItems></MicrosoftItems>,
-        loader: () => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/microsoft`)
+        loader: () => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/microsoft`)
       },
       {
         path: "/intelItems",
         element: <IntelItems></IntelItems>,
-        loader: () => fetch(`https://brand-shop-server-8j2odgnxm-md-zalish-mahmuds-projects.vercel.app/intel`)
+        loader: () => fetch(`https://brand-shop-server-qv8oodnr1-md-zalish-mahmuds-projects.vercel.app/intel`)
       }
     ]
   },
