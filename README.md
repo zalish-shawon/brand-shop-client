@@ -1,8 +1,22 @@
-# React + Vite
+# Electronics eshop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Image](/public/ss.png)
 
-Currently, two official plugins are available:
+- https://brand-eshop-7ab17.web.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Project Features
+
+- This is an electronics eStore where users can check out new products.
+- Users can check which products are available based on the product brand
+- If users want to view product details, they should log in first.
+- Users can also create an account or register on this site.
+- This web application uses the Firebase authentication system.
+- For the backend, we use a MongoDB database and fetch data from REST APIs.
+- This web application is built using Node.js and Express.js.
+- Users who register on this web application can add new products and update existing ones.
+- Users can also select the products they want to buy and add them to their cart.
+- Users can also delete products from their cart in the 'My Cart' tab.
+- This website features a toggle for dark and light mode functionality.
+
+
+
