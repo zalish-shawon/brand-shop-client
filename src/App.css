@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a.active {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+/* styles.css */
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #000;
+    --background-color-dark: #333;
+    --text-color-dark: #fff;
+  }
+  
+  .light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+  }
+  
+  .dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+
+  .dark-mode input {
+    background-color: var(--background-color-dark);
+  }
+
+  .dark-mode .register {
+    background-color: var(--background-color-dark);
+    
+  }
+  
+
+
+ 

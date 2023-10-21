@@ -3,7 +3,7 @@
 
 const Hero = () => {
     return (
-        <div className="bg-gray-100">
+        <div className="">
             <section class="w-[90%] mx-auto dark:bg-gray-900 border-b border-blue-100">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-1 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">

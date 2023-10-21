@@ -62,16 +62,16 @@ const handlegoogleLogin = () => {
 
   return (
 
-    <div class="min-h-screen flex flex-col items-center justify-center bg-gray-50">
-      <div class="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
-        <div class="font-medium self-center text-xl sm:text-2xl uppercase text-gray-800">Login To Your Account</div>
-        <button onClick={handlegoogleLogin} class="relative mt-6 border rounded-md py-2 text-sm text-gray-800 bg-gray-100 hover:bg-gray-200">
+    <div class=" lg:min-h-screen flex flex-col items-center p-0 justify-center ">
+      <div class="flex flex-col  shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
+        <div class="font-medium self-center text-xl sm:text-2xl uppercase text-gray-500">Login To Your Account</div>
+        <button onClick={handlegoogleLogin} class="relative mt-6 border rounded-md py-2 text-sm text-gray-500   hover:bg-gray-700">
           <span class="absolute left-0 top-0 flex items-center justify-center h-full w-10 text-2xl"><FcGoogle></FcGoogle></span>
           <span>Login with Google</span>
         </button>
-        <div class="relative mt-10 h-px bg-gray-300">
+        <div class="relative mt-10 h-px ">
           <div class="absolute left-0 top-0 flex justify-center w-full -mt-2">
-            <span class="bg-white px-4 text-xs text-gray-500 uppercase">Or Login With Email</span>
+            <span class=" px-4 text-xs text-gray-500 uppercase">Or Login With Email</span>
           </div>
         </div>
         <div class="mt-10">

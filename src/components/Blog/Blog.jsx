@@ -2,7 +2,7 @@
 
 const Blog = () => {
     return (
-      <div className="bg-gray-100 mt-12">
+      <div className=" mt-12">
 
       
       <section class="border-b border-blue-100 w-[90%] mx-auto pt-5 pb-10 lg:pt-[50px] lg:pb-5  dark:bg-gray-900">
