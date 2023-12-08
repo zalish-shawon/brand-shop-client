@@ -2,7 +2,8 @@
 
 ![Image](/public/ss.png)
 
-- https://brand-eshop-7ab17.web.app/
+- Live link: https://brand-eshop-7ab17.web.app/
+- Server link: https://github.com/zalish-shawon/brand-shop-server
 
 # Project Features
 
@@ -17,6 +18,8 @@
 - Users can also select the products they want to buy and add them to their cart.
 - Users can also delete products from their cart in the 'My Cart' tab.
 - This website features a toggle for dark and light mode functionality.
+
+**Technology**: React.js, Tailwind CSS, MongoDB, Express.js, Node.js, Private route, Firebase Authentication.
 
 
 
